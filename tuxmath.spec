@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 An educational math tutorial game starring Tux, the Linux Penguin.
 
 %description -l pl
-Gra edukacyjna, w której wystêpuje Linuksowy pingwinek - Tux.
+Gra edukacyjna, w której wystêpuje linuksowy pingwinek - Tux.
 
 %prep
 %setup -q -n %{name}

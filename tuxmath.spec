@@ -6,15 +6,14 @@ Version:	2001.09.07
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}-%{_subver}.tar.gz
-URL:		http://www.newbreedsoftware.com/tuxmath/
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}-%{_subver}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.patch
+URL:		http://www.newbreedsoftware.com/tuxmath/
 BuildRequires:	SDL_image-devel >= 1.2.2
-BuildRequires:	SDL_ttf-devel >= 2.0.5
 BuildRequires:	SDL_mixer-devel >= 1.2.4
+BuildRequires:	SDL_ttf-devel >= 2.0.5
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 An educational math tutorial game starring Tux, the Linux Penguin.

@@ -15,7 +15,6 @@ BuildRequires:	SDL_ttf-devel >= 2.0.5
 BuildRequires:	SDL_mixer-devel >= 1.2.4
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 An educational math tutorial game starring Tux, the Linux Penguin.

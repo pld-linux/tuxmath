@@ -7,5 +7,5 @@ Exec=tuxmath
 Icon=tuxmath.png
 Type=Application
 Terminal=false
-Categories=Education;
+Categories=Education;Science;Math;
 # vi: encoding=utf-8

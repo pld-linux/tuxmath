@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Tux Math 
+Comment=Tux Math - Learn math with tux!
+Comment[pl]=Tux Math - Ucz siê matematyki z tuxem!
+Exec=tuxmath
+Icon=tuxmath.png
+Type=Application
+Terminal=0

@@ -1,14 +1,9 @@
-#
-# TODO:
-#
-# description, summary, check comment at .desktop file
-#
-Summary:	Tux Math
-Summary(pl):	Tux Math
+Summary:	Tux Math - educational math game.
+Summary(pl):	Tux Math - gra edukacyjna - dzia³ matematyka.
 Name:		tuxmath
 Version:	2001.09.07
 %define		_subver	0102
-Release:	0.9
+Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}-%{_subver}.tar.gz
@@ -24,8 +19,10 @@ Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define _prefix /usr/X11R6
 
 %description
+An educational math tutorial game starring Tux, the Linux Penguin.
 
 %description -l pl
+Gra edukacyjna, w której wystêpuje Linuxowy pigwinek - Tux.
 
 %prep
 %setup -q -n %{name}

@@ -5,4 +5,4 @@ Comment[pl]=Tux Math - Ucz siê matematyki z tuxem!
 Exec=tuxmath
 Icon=tuxmath.png
 Type=Application
-Terminal=0
+Terminal=false

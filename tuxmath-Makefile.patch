@@ -1,10 +1,12 @@
---- Makefile.orig	Fri Sep  7 09:40:21 2001
-+++ Makefile	Wed Oct  9 10:34:31 2002
-@@ -7,7 +7,7 @@
+--- Makefile.orig	Fri Sep  7 07:40:21 2001
++++ Makefile	Thu Oct 10 11:21:52 2002
+@@ -6,8 +6,8 @@
+ # 2001.Aug.26 - 2001.Sep.07
  
  
- CFLAGS=-Wall -O2 $(SDL_CFLAGS) -DDATA_PREFIX=\"$(DATA_PREFIX)\" -DDEBUG \
+-CFLAGS=-Wall -O2 $(SDL_CFLAGS) -DDATA_PREFIX=\"$(DATA_PREFIX)\" -DDEBUG \
 -	-DVERSION=\"$(VERSION)\" -D$(SOUND)SOUND
++CFLAGS=-Wall -O2 $(SDL_CFLAGS) -DDATA_PREFIX=\"/usr/X11R6/share/tuxmath/\" -DDEBUG \
 +	-DVERSION=\"$(VERSION)\" -D$(SOUND)SOUND $(RPM_OPT_FLAGS)
  
  SDL_CFLAGS=$(shell sdl-config --cflags)

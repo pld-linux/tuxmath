@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}-%{_subver}.tar.gz
+# Source0-md5:	435ba5d937106ca8b7da46c1a95a0d8c
 Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.patch
 URL:		http://www.newbreedsoftware.com/tuxmath/

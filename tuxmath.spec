@@ -27,19 +27,21 @@ Gra edukacyjna, w której wystêpuje linuksowy pingwinek - Tux.
 %patch0 -p0
 
 %build
-%{__make} RPM_OPT_FLAGS="%{rpmcflags}"
+%{__make} \
+	CC="%{__cc}" \
+	RPM_OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Games,%{_datadir}/%{name}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_desktopdir},%{_datadir}/%{name}}
 
 %{__make} _prefix=$RPM_BUILD_ROOT%{_prefix} install
 
 install data/images/.xvpics/icon.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 rm -rf $(find $RPM_BUILD_ROOT -type d -name CVS)
-rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/images/.xvpics/
+rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/images/.xvpics
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc docs
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Games/*
+%{_desktopdir}/*
 %{_pixmapsdir}/*
 %{_datadir}/%{name}

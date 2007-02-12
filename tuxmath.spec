@@ -1,5 +1,5 @@
 Summary:	Tux Math - educational math game
-Summary(pl):	Tux Math - gra edukacyjna z zakresu matematyki
+Summary(pl.UTF-8):   Tux Math - gra edukacyjna z zakresu matematyki
 Name:		tuxmath
 Version:	2001.09.07
 %define		_subver	0102
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 An educational math tutorial game starring Tux, the Linux Penguin.
 
-%description -l pl
-Gra edukacyjna, w której wystêpuje linuksowy pingwinek - Tux.
+%description -l pl.UTF-8
+Gra edukacyjna, w ktÃ³rej wystÄ™puje linuksowy pingwinek - Tux.
 
 %prep
 %setup -q -n %{name}

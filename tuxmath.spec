@@ -1,5 +1,5 @@
 Summary:	Tux Math - educational math game
-Summary(pl.UTF-8):   Tux Math - gra edukacyjna z zakresu matematyki
+Summary(pl.UTF-8):	Tux Math - gra edukacyjna z zakresu matematyki
 Name:		tuxmath
 Version:	2001.09.07
 %define		_subver	0102

@@ -1,10 +1,9 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Tux Math 
 Comment=Tux Math - Learn math with tux!
 Comment[pl]=Tux Math - Ucz się matematyki z tuxem!
 Exec=tuxmath
-Icon=tuxmath.png
+Icon=tuxmath
 Type=Application
 Terminal=false
 Categories=Education;Science;Math;
